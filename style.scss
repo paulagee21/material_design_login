@@ -1,0 +1,76 @@
+$gray: #EDEDED;
+$hot-pink: #F32A55;
+$white: #FFF;
+
+body {
+	background-image: url('assets/weather.png');
+	padding: 20px;
+}
+
+.card {
+	background-color: $white;
+	max-width: 350px;
+	margin: 0 auto;
+	float: none;
+	padding: 30px 35px;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.20);
+
+	.card-header {
+		text-transform: uppercase;
+		margin-left: -35px; 
+		margin-bottom: 20px;
+		border-left: 4px solid $hot-pink;  
+		padding: 0 35px;
+		color: $hot-pink;
+		font-weight: bold;
+	}
+}
+
+input[type=text], input[type=password] {
+	border: none;
+	outline: none;
+	border-radius: 0;
+	box-shadow: none;
+	border-bottom: 2px solid $gray;
+}
+
+input[type=text]:focus, input[type=password]:focus{
+	border: none;
+	outline: none;
+	border-radius: 0;
+	box-shadow: none;
+	border-bottom: 2px solid $hot-pink;
+	//transition: border-bottom;
+}
+
+div.form-group {
+	margin-bottom: 30px;
+
+	label {
+		z-index: 100;
+		position: absolute;
+		font-weight: normal;
+	}
+
+	label.active {
+		position: relative;
+	}
+}
+
+button, input[type=submit] {
+	border-radius: 0;
+	box-shadow: none;
+	text-transform: uppercase;
+	background-color: rgba(0,0,0,0);
+	border: 2px solid $gray;
+	color: $gray;
+}
+
+form {
+	margin-bottom: 30px;
+}
+
+.btn-lg {
+	padding: 12px 4px;
+}	
