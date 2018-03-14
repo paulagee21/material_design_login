@@ -80,6 +80,8 @@ div.form-group  {
 		font-weight: normal;
 		line-height: 35px;
 		font-size: 15px;
+		top: 0;
+		transition: top 0.5s, font-size 0.5s, color 0.5s;
 	}
 	
 	label.active { 
